@@ -39,6 +39,14 @@ const postSchema = new Schema({
         type: Boolean,
         default: false,
     },
+    profits : [{
+        year: String,
+        value: String,
+    }],
+    shareHolding: [{
+        investor: String,
+        value: String,
+    }],
     
   }, {timestamps: true});
   
